@@ -4,8 +4,7 @@ about: Developer defined task.
 title: "[Task]"
 labels: documentation
 assignees: ''
----
-
+body:
 - type: dropdown
   id: labels
   attributes:
@@ -14,7 +13,7 @@ assignees: ''
     options:
       - Option 1
       - Option 2
-
+---
 # Parent Backlog Item
 #xx
 
