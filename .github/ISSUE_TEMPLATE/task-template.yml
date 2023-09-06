@@ -1,8 +1,7 @@
 name: Task Template
-about: Developer defined task.
+description: Developer defined task.
 title: "[Task]: "
 labels: documentation
-assignees: ''
 body:
 - type: markdown
   attributes:
