@@ -31,4 +31,4 @@ body:
       - label: "Additional labels added."
       - label: "Confirm parent backlog item has correct issue id"
   validations:
-   required: true
+    required: true
