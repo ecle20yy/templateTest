@@ -11,14 +11,24 @@ body:
   id: parent_pbi
   attributes:
     label: Parent Backlog Item
-    description: "..."
-    placeholder: "#xx"
+    description: "Enter the issue number of the parent backlog item."
+    value: "#"
   validations:
     required: true
 - type: textarea
   id: task_description
   attributes:
-    label: Description of task
-    description: "Describe with a sentence or two the task."
+    label: Description of new task
+    description: "Describe with a sentence or two the task you're adding."
   validations:
     required: true
+- type: checkboxes
+  id: completed-manual-steps
+  attributes:
+    label: Required Manual Steps
+    description: "Confirm that these steps have been taken before new issue is created."
+    options:
+      - label: "Additional labels added."
+      - label: "Confirm parent backlog item has correct issue id"
+  validations:
+   required: true
