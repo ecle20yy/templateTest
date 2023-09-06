@@ -6,12 +6,11 @@ body:
 - type: markdown
   attributes:
     value: |
-      hey bro.
-- type: dropdown
-  id: labels
+      Welcome Message
+- type: textarea
+  id: task_description
   attributes:
-    label: This is my label.
-    multiple: false
-    options:
-      - Option 1
-      - Option 2
+    label: Description of task
+    description: "Describe with a sentence or two the task."
+  validations:
+    required: true
