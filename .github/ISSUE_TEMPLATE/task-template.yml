@@ -28,6 +28,8 @@ body:
     label: Required Manual Steps
     description: "Confirm that these steps have been taken before new issue is created."
     options:
+      - label: "Confirm title is filled out"
+        required: true
       - label: "Additional labels added."
         required: true
       - label: "Confirm parent backlog item has correct issue id"
