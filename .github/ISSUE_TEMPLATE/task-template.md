@@ -1,10 +1,13 @@
----
 name: Task Template
 about: Developer defined task.
-title: "[Task]"
+title: "[Task]: "
 labels: documentation
 assignees: ''
 body:
+- type: markdown
+  attributes:
+    value: |
+      hey bro.
 - type: dropdown
   id: labels
   attributes:
@@ -13,8 +16,3 @@ body:
     options:
       - Option 1
       - Option 2
----
-# Parent Backlog Item
-#xx
-
-# Body
