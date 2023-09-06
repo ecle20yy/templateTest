@@ -7,7 +7,7 @@ body:
   attributes:
     value: |
       # Welcome Message
--type: input
+- type: input
   id: parent_PBI
   attributes:
     label: Parent Backlog Item
