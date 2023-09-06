@@ -6,7 +6,15 @@ body:
 - type: markdown
   attributes:
     value: |
-      Welcome Message
+      # Welcome Message
+-type: input
+  id: parent_PBI
+  attributes:
+    label: Parent Backlog Item
+    description: "..."
+    placeholder: "#xx"
+  validations:
+    required: true
 - type: textarea
   id: task_description
   attributes:
