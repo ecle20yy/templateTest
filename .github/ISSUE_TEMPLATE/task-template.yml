@@ -2,7 +2,7 @@ name: Task Template
 description: Developer defined task.
 title: "[Task]: "
 labels: documentation
-projects: "ecle20yy/Flexicharge BMS"
+projects: "ecle20yy/2"
 body:
 - type: markdown
   attributes:
