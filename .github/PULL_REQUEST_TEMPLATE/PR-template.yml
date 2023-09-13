@@ -1,26 +1,25 @@
-name: Task Template
-description: Developer defined task.
-title: "[Task]: "
-labels: documentation
-projects: "ecle20yy/2"
+name: PR Template
+description: Pull request template.
+title: "[PR]: "
+labels: "pull request"
 body:
 - type: markdown
   attributes:
     value: |
-      # Welcome Message
+      # Pull request template
 - type: input
-  id: parent_pbi
+  id: parent_task
   attributes:
-    label: Parent Backlog Item
-    description: "Enter the issue number of the parent backlog item."
-    value: "#"
+    label: Task being closed with PR
+    description: "Enter the issue number of the task after the '#'."
+    value: "Closes #"
   validations:
     required: true
 - type: textarea
   id: task_description
   attributes:
-    label: Description of new task
-    description: "Describe with a sentence or two the task you're adding."
+    label: Description of pull request
+    description: "Describe with a sentence or two the work you have completed."
   validations:
     required: true
 - type: checkboxes
@@ -31,7 +30,9 @@ body:
     options:
       - label: "Confirm title is filled out"
         required: true
-      - label: "Additional labels added."
+      - label: "Definition of done is complete so far."
         required: true
-      - label: "Confirm parent backlog item has correct issue id"
+      - label: "Confirm Task has correct issue id"
+        required: true
+      - label: "Confirm PR is going to dev and NOT main"
         required: true
